@@ -1,0 +1,19 @@
+<section class="edit-form-container">
+
+    <form action="/catalog/{{currBook._id}}/edit" method="POST">
+        <h3>Edit Book Review</h3>
+        <label>Title</label>
+        <input type="text" name="title" class="box" value="{{currBook.title}}" id="">
+        <label>Author</label>
+        <input type="text" name="author" class="box" value="{{currBook.author}}" id="">
+        <label>Genre</label>
+        <input type="text" name="genre" class="box" value="{{currBook.genre}}" id="">
+        <label>Stars</label>
+        <input type="number" name="stars" class="box" value="{{currBook.stars}}" id="">
+        <label>Image</label>
+        <input type="text" name="image" class="box" value="{{currBook.image}}" id="">
+        <label>Review</label>
+        <textarea class="box" name="review">{{currBook.review}}</textarea>
+        <input type="submit" value="Edit" class="btn">
+    </form>
+</section>
